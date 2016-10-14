@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+<style>
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  background-color: #dddddd;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before,
+input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 58px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 60px;
+}
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  background-color: #dddddd;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:before,
+input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 52px;
+  background-color: #dddddd;
+  border-radius: 52px;
+  transition: margin 0.4s, background 0.4s;
+}
+input.cmn-toggle-round-flat:checked + label {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 60px;
+  background-color: #8ce196;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  text-align: center;
+}
+.triangle {
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+.triangle-1 {
+  width: 100px;
+  height: 100px;
+  border-bottom: solid 50px rgb(200,30,50);
+  border-left: solid 50px rgb(200,30,50);
+  border-right: solid 50px transparent;
+  border-top: solid 50px transparent;
+}
+.triangle-2 {
+  width: 50px;
+  height: 100px;
+  border-right: solid 50px rgb(200,30,50);
+  border-bottom: solid 50px transparent;
+  border-top: solid 50px transparent;
+}
+.triangle-3 {
+  width: 50px;
+  height: 100px;
+  border-left: solid 50px rgb(200,30,50);
+  border-bottom: solid 50px transparent;
+  border-top: solid 50px transparent;
+}
+.triangle-4 {
+  width: 100px;
+  height: 50px;
+  border-bottom: solid 50px rgb(200,30,50);
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+}
+.triangle-5 {
+  width: 100px;
+  height: 50px;
+  border-top: solid 50px rgb(200,30,50);
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+}
+</style>
+
+<body>
+<div class="switch">
+  <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+  <label for="cmn-toggle-1"></label>
+</div>
+
+<div class="switch">
+  <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+  <label for="cmn-toggle-4"></label>
+</div>
+
+<div class="switch">
+  <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+  <label for="cmn-toggle-7" data-on="Yes" data-off="No"></label>
+</div>
+
+
+<div class="triangle triangle-0"></div>
+<div class="triangle triangle-1"></div>
+<div class="triangle triangle-2"></div>
+<div class="triangle triangle-3"></div>
+<div class="triangle triangle-4"></div>
+<div class="triangle triangle-5"></div>
+</body>
+</html>
